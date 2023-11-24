@@ -16,6 +16,7 @@
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
     <div class="container">
       <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
       <img class="imgfluid" id="banner" src="https://python-project-website--mrcc04.repl.co/static/banner.jpg">
@@ -30,9 +31,9 @@
         {% endfor %}
       </p>
       <div class="text-center"">
-        <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2023, Jovian</p>
+        <button class="btn btn-primary btn-lg" style="margin:20px;">Contact Us</button>
       </div>
+      {% include 'footer.html' %}
     </div>
   </body>
 </html>
